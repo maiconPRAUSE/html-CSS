@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: darkgray;
+            padding: 10px;
+            text-align: center;
+            margin: auto 5px auto 5px;
+            border: 1px solid rgba(25, 171, 207, 0.514);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.603);
+        }
+
+        header > h1 {
+            text-shadow: 1px 1px 1px rgba(55, 90, 119, 0.705);
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
+
+        nav > a {
+            text-decoration: none;
+            font-weight: bolder;
+            margin-right: 30px;
+            margin-left: 30px;
+            
+            text-align: center;  
+        }
+
+        main {
+            background-color: darkgray;
+            margin: 5px 5px 5px 5px;
+            border:  1px solid rgba(25, 171, 207, 0.514);
+            padding: 50px;
+            box-shadow: 0px -2px 0px rgba(0, 140, 255, 0.767);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Análise de Sistemas</h1>
+            <nav>
+            <a href="http://">Link</a>
+            <a href="http://">Link</a>
+            <a href="http://">Link</a>
+            <a href="http://">Link</a>
+            <a href="http://">Link</a>
+            <a href="http://">Link</a>
+            <a href="http://">Link</a>
+            </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2> Internet das Coisas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nisi quo deleniti repellendus alias impedit. Alias ratione, qui, suscipit dolorum sit eaque consequatur officiis eligendi impedit voluptatem, a accusamus! Eveniet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero enim blanditiis labore non asperiores iusto, architecto suscipit accusamus tempora odit recusandae hic. Sed totam corrupti eum mollitia ipsam qui praesentium.</p>
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id eveniet eius similique, ullam quibusdam repellat, esse vero voluptas eaque numquam labore. Saepe fugiat quasi fuga et repellendus iusto ab quibusdam.</p>
+            </article>           
+        </section>
+        <section>
+            <article>
+                <h2>Calculadora</h2>
+                <div>
+                    <input type="number" name="txt01" id="txt1"> +
+                    <input type="number" name="txt01" id="txt2">
+                    <input type="button" value="Somar" onclick="somar()">
+                    <div id="resultado" >Resultado:</div>
+                </div>
+            </article>
+        </section> 
+    </main>
+
+    <footer>
+        Desenvolvido pelo Prause
+    </footer>
+    <script>
+        function somar(){
+            var tn1 = window.document.getElementById('txt1')
+            var tn2 = window.document.getElementById('txt2')
+            var total = window.document.getElementById('resultado')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            total.innerHTML = ` A soma entre ${n1} e ${n2} é igual <strong>${s}</strong>` 
+        }
+
+
+    </script>
+</body>
+</html>

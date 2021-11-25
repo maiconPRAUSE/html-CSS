@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'faroeste';
+    src: url('fonts/Western\ Bang\ Bang.otf') format('opentype');
+}
+
+main {
+    background-color: rgb(173, 233, 213);
+    border-radius: 5px;
+    margin: auto;
+    padding: 15px;
+    text-align: inherit;
+    font-family: 'faroeste';
+    height: 1400px;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.418);
+    font-size: 40px;
+    font-family: 'faroeste';
+}
+
+body {
+    background-color: darkgrey;
+    font-family: 'faroeste';
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+h2 {
+    font-family: 'faroeste';
+    font-weight: lighter;
+}
+
+.basico {
+    color: rgb(102, 95, 95);
+}
+
+.intermediario {
+    color: rgb(13, 87, 87);
+}
+
+.avancado {
+    color: brown;
+}
+
+.blocos {
+    display: inline-block;
+
+}
+
+
+div:hover {
+    background-color: rgb(43, 82, 46);
+}
+
+a:hover {
+    color: darkred;
+}
+

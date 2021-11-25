@@ -1,0 +1,15 @@
+@charset "UTF-8";   
+
+h1 {
+    background-color: cadetblue;
+    height: 50px;
+    width: 350px;
+    border-width: 10px;
+    border-color: chartreuse;
+    border-style: solid;
+    padding: 20px;
+    margin: 50px;
+    outline-width: 30px;
+    outline-style: solid;
+    outline-color: cornflowerblue;
+}
