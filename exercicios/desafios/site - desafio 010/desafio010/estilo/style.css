@@ -48,7 +48,7 @@ header > p {
     font-family: var(--fonte-padrao);
     color: white;
     font-size: 1.2em;
-    max-width: 600px;
+    max-width: 600px; /*largura maxima, o texto se ajusta comforme a tela vai diminuindo ou aumentando.*/
     margin: auto;
     margin-bottom:20px;
     padding-right: 20px;
@@ -184,7 +184,7 @@ aside {
 }
 
 aside > ul {
-    list-style-position: inside; /*posição da lista dentro da ul*/
+    list-style-position: inside; /*posição da lista dentro da ul(quadro)*/
     columns: 2; /* dividir a lista em 2 colunas */
     list-style-type: '\2714\00A0\00A0';  /*color emoji na lista, O primeiro é o emoji os outros são os espaçamentos. LEMBRANDO: Não é compatível com todos os navegadores. */
 
