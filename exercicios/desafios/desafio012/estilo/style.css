@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'sriracha';
+    src: url('../fontes/Sriracha-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'passion one';
+    src: url('../fontes/PassionOne-Black.ttf') format('truetype');
+}
+ 
+:root {
+    --fonte1: Verdana, Genava, Tahoma, sans-serif;
+    --fonte2: 'passion one', cursive;
+    --fonte3: 'sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+    
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+header h1 {
+    font-family: var(--fonte2);
+    padding-top: 50px; /* para centralizar com o header p*/
+    letter-spacing: 2px;
+    font-variant: small-caps; /*todas letras em maiúsculo mas a primeira letra de cada palavras com a fonte maior*/
+    font-size: 10vw;/* tamanho seria 10% da largura(w) da view port*/
+    
+
+}
+
+header p {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding-bottom: 50px; /* para centralizar com header p1*/ 
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*duas vezes o espaçamento duplo*/
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size:3.5vw; /*view width largura da tela, o tamanho da fonte(p, h1) e ajusta de acordo com o tamanho da tela. */
+    
+}
+
+section p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+    
+}
+
+section.imagem {
+    color: white;               /*0px ampliação*/
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.733);/*inset - para dentro*/
+    background-size: cover;
+    background-attachment: fixed;/*imagem fixa na tela*/
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.384);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    text-shadow: 2px 2px 1px black;
+    /*background-size: cover;  para ambos no section.imagem*/
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    /*background-size: cover;  para ambos no section.imagem*/
+}
+
+
+
+footer { 
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
