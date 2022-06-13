@@ -10,20 +10,21 @@
             height: 96vh;
             background-color: brown;
             padding: 10px;
-            position: relative;/* por padrão todo posicionamento em html é relativo.*/
+            position: relative;/* por padrão todo posicionamento em html é relativo. 
+            E  padrão UTILIZAR POSITION  o elemento passa a ACEITAR top, bottom, left, right.*/
             background-image: url(imagens/target001.png);
             background-size: 100% 100%;
         }
 
-        #conteudo {
+        #conteudo { 
             width: 300px;
             height: 300px;
             background-image: url(imagens/target001.png);
             background-size: 100% 100%;
             background-color: chartreuse;
             position: absolute; /* por padrão a tag que fica dentro de outra recebe o valor absolute*/
-            left: 50%;
-            top: 50%;
+            left: 50%; /*podem ser usados somente com position*/
+            top: 50%; /*podem ser usados somente com position*/  
             transform: translate(-50%, -50%); /*alinhamento a esquerda e topo*/
         }
 

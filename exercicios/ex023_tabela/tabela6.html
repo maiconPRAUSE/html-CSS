@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .destaque {
+            background-color: cadetblue;
+        }
+
+        col.cnome , col.csexo  {
+            background-color: chartreuse;
+        }
+
+        col.grupo {
+            background-color: yellow;
+        }
+
+        .azul {
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+
+    <table>
+        <!--
+            para aplicar uma cor em todos os valores de uma coluna, sem a necessidade de criar uma class ou id para cada um dos valores
+        -->
+        <colgroup>
+        <col class="cnome"> <!-- col para primeira coluna-->
+        <col class="azul"> <!-- col para segunda coluna-->
+        <col class="grupo" span="2">  <!-- col para 3 e 4  coluna-->
+        <!-- usando a tag 'span' para expandir mais de uma coluna, o valor representa a quantidade de colunas -->
+        
+        </colgroup>
+
+         
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>23</td>
+            <td>Jornalista</td>
+        <tr>
+            <td>João Silva</td>
+            <td>M</td>
+            <td>33</td>
+            <td>Engenheiro Civil</td>
+        </tr>
+        <tr>
+            <td>Bruna Pereira</td>
+            <td>F</td>
+            <td>21</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Carlos Santos</td>
+            <td>M</td>
+            <td>55</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Cláudio Alves</td>
+            <td>M</td>
+            <td>43</td>
+            <td>Programador</td>
+        </tr>
+        
+    </table>
+</body>
+</html>

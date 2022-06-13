@@ -6,37 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funfo fixo de tela</title>
     <style>
+        
         body {
-            height: 100vh; /* altura e 100% da viewport(tela do navegador)*/
+            height: 100vh;
             background-color: black;
-            background-attachment:fixed;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover;/*a imagem se  ajusta ao tamanho da tela, ou seja, sempre 100% do tamanho que for no display, mas cria cortes no top e bottom.
-            auto: é o padrão 
-            contain: mostra 100% da imagem e sem cortes, mas se diminuir a altura ou largura ele cria espaços sem imagem .
-            cover: cobre toda a tela mesmo que tenha que cortar um pouco a imagem.
-            */
-            
-            /*Shorthand - background 
-                 color > image > position > repeat > [size] > attachment
-                 o size não funciona, é necessario remover do shorthand e usar como background-size, porque a imagem no navegador não aparece quando é usado pelo shorthand.
-            */
-            
-            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
-            background-size: cover;
-
+            background-attachment: fixed;
+            background-size:cover; 
         }
-
         main {
             background-color: white;
-            max-width: 400px;/*largura maxima, o texto se ajusta comforme a tela vai diminuindo ou aumentando.*/
+            width: 400px;
             padding: 10px;
             margin: auto;
-            border: 1px solid darkblue;
+            border: 1px solid black;
             border-radius: 5px;
-            
+          
         }
     </style>
 </head>

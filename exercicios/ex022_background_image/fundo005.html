@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funfo fixo de tela</title>
+    <style>
+        body {
+            height: 100vh; /* altura e 100% da viewport(tela do navegador)*/
+            
+            background-color: black;
+            background-attachment:fixed;/*manter o fundo fixo e apenas o conteudo do main vai ter rolagem */
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;/*a imagem se  ajusta ao tamanho da tela, ou seja, sempre 100% do tamanho que for no display, mas cria cortes no top e bottom.
+            auto: é o padrão 
+            contain: mostra 100% da imagem e sem cortes, mas se diminuir a altura ou largura ele cria espaços sem imagem .
+            cover: cobre toda a tela mesmo que tenha que cortar um pouco a imagem.
+            */
+            
+            /*Shorthand - background 
+                 color > image > position > repeat > [size] > attachment
+                 o size não funciona, é necessario remover do shorthand e usar como background-size, porque a imagem no navegador não aparece quando é usado pelo shorthand.
+            */
+            /* ULIZANDO O SHORTHAND */
+            /* background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed; */
+            background-size: cover;
+
+        }
+
+        main {
+            background-color: white;
+            max-width: 400px;/*largura maxima, o texto se ajusta comforme a tela vai diminuindo ou aumentando.*/
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptas praesentium quis ratione animi tenetur. In deleniti ipsa aliquid est omnis sapiente voluptates ut? Facilis illum quia culpa libero accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptate porro eius ipsa repellendus odio officia a dignissimos tempore error, ipsum itaque dolorum quia mollitia aperiam ducimus animi? Aliquam, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto numquam modi necessitatibus debitis eligendi illo veniam commodi culpa officiis, amet quidem id, inventore dolorum at accusamus minima eos consequuntur iure!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptas praesentium quis ratione animi tenetur. In deleniti ipsa aliquid est omnis sapiente voluptates ut? Facilis illum quia culpa libero accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptate porro eius ipsa repellendus odio officia a dignissimos tempore error, ipsum itaque dolorum quia mollitia aperiam ducimus animi? Aliquam, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto numquam modi necessitatibus debitis eligendi illo veniam commodi culpa officiis, amet quidem id, inventore dolorum at accusamus minima eos consequuntur iure!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptas praesentium quis ratione animi tenetur. In deleniti ipsa aliquid est omnis sapiente voluptates ut? Facilis illum quia culpa libero accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptate porro eius ipsa repellendus odio officia a dignissimos tempore error, ipsum itaque dolorum quia mollitia aperiam ducimus animi? Aliquam, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto numquam modi necessitatibus debitis eligendi illo veniam commodi culpa officiis, amet quidem id, inventore dolorum at accusamus minima eos consequuntur iure!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptas praesentium quis ratione animi tenetur. In deleniti ipsa aliquid est omnis sapiente voluptates ut? Facilis illum quia culpa libero accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptate porro eius ipsa repellendus odio officia a dignissimos tempore error, ipsum itaque dolorum quia mollitia aperiam ducimus animi? Aliquam, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto numquam modi necessitatibus debitis eligendi illo veniam commodi culpa officiis, amet quidem id, inventore dolorum at accusamus minima eos consequuntur iure!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptas praesentium quis ratione animi tenetur. In deleniti ipsa aliquid est omnis sapiente voluptates ut? Facilis illum quia culpa libero accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptate porro eius ipsa repellendus odio officia a dignissimos tempore error, ipsum itaque dolorum quia mollitia aperiam ducimus animi? Aliquam, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto numquam modi necessitatibus debitis eligendi illo veniam commodi culpa officiis, amet quidem id, inventore dolorum at accusamus minima eos consequuntur iure!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptas praesentium quis ratione animi tenetur. In deleniti ipsa aliquid est omnis sapiente voluptates ut? Facilis illum quia culpa libero accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptate porro eius ipsa repellendus odio officia a dignissimos tempore error, ipsum itaque dolorum quia mollitia aperiam ducimus animi? Aliquam, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto numquam modi necessitatibus debitis eligendi illo veniam commodi culpa officiis, amet quidem id, inventore dolorum at accusamus minima eos consequuntur iure!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptas praesentium quis ratione animi tenetur. In deleniti ipsa aliquid est omnis sapiente voluptates ut? Facilis illum quia culpa libero accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptate porro eius ipsa repellendus odio officia a dignissimos tempore error, ipsum itaque dolorum quia mollitia aperiam ducimus animi? Aliquam, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto numquam modi necessitatibus debitis eligendi illo veniam commodi culpa officiis, amet quidem id, inventore dolorum at accusamus minima eos consequuntur iure!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptas praesentium quis ratione animi tenetur. In deleniti ipsa aliquid est omnis sapiente voluptates ut? Facilis illum quia culpa libero accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptate porro eius ipsa repellendus odio officia a dignissimos tempore error, ipsum itaque dolorum quia mollitia aperiam ducimus animi? Aliquam, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto numquam modi necessitatibus debitis eligendi illo veniam commodi culpa officiis, amet quidem id, inventore dolorum at accusamus minima eos consequuntur iure!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptas praesentium quis ratione animi tenetur. In deleniti ipsa aliquid est omnis sapiente voluptates ut? Facilis illum quia culpa libero accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptate porro eius ipsa repellendus odio officia a dignissimos tempore error, ipsum itaque dolorum quia mollitia aperiam ducimus animi? Aliquam, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto numquam modi necessitatibus debitis eligendi illo veniam commodi culpa officiis, amet quidem id, inventore dolorum at accusamus minima eos consequuntur iure!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptas praesentium quis ratione animi tenetur. In deleniti ipsa aliquid est omnis sapiente voluptates ut? Facilis illum quia culpa libero accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptate porro eius ipsa repellendus odio officia a dignissimos tempore error, ipsum itaque dolorum quia mollitia aperiam ducimus animi? Aliquam, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto numquam modi necessitatibus debitis eligendi illo veniam commodi culpa officiis, amet quidem id, inventore dolorum at accusamus minima eos consequuntur iure!</p>
+    </main>
+</body>
+</html>
