@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            border: 2px solid black;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis beatae eveniet quisquam ea, voluptate, ab optio minus tempore id cumque nisi voluptas laborum suscipit ullam repudiandae, fugiat explicabo nesciunt culpa?</p>
+
+    <ul>
+        <!-- adicionar target e por o atributo name do iframe  -->
+        <li><a href="paginas_extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas_extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas_extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem libero voluptatum expedita, maxime dolorem, in recusandae ex laborum distinctio aut iste velit eius fuga, non saepe modi magnam possimus quod! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde tenetur ipsa earum, temporibus atque iusto repellendus reprehenderit, perspiciatis veritatis facilis quaerat blanditiis architecto minima sint odit adipisci molestias, quidem sed.</p>
+<!-- Modo alternativo mas o ideal é criar um arquivo html próprio -->
+
+  <!-- ao carregar a página o iframe vai estar vazio, para isso vai ser criado um arquivo próprio para iframe ao abrir a página. 
+  Primeiro é substituir "src" por "srcdoc"(permite criar html dentro)  
+-->
+ <!-- no imagem substituir aspas duplas "" por simples ''-->
+    <iframe srcdoc="<h1>Escolha uma das opcões acima</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius beatae, alias ducimus eaque a ab tempore veritatis! Soluta, cumque, quibusdam laboriosam necessitatibus veritatis molestias architecto facere nulla assumenda alias velit.</p> <img src='imagem/cursoemvideo.png'> " frameborder="1" id="tela" name="frame"><!-- usando o atributo name para direcionar as tags 'a'-->
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio est aliquam et, totam doloribus quaerat molestias laboriosam odio. Vero hic quae pariatur saepe fugiat repudiandae ipsa sit suscipit dolorem corrupti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quam sequi inventore odio reiciendis! Dolorum, quam soluta repellendus nobis vel cupiditate ullam non repellat maxime, laboriosam unde est similique optio.</p>
+
+</body>
+</html>
